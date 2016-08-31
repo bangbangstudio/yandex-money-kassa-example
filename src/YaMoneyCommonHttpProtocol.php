@@ -1,8 +1,6 @@
 <?php
 
 namespace shop;
-require_once 'Utils.php';
-require_once 'Log.php';
 
 use DateTime;
 

@@ -1,8 +1,6 @@
 <?php
 
 namespace shop;
-require_once "Settings.php";
-require_once "YaMoneyCommonHttpProtocol.php";
 
 $test = new Test();
 $test->checkOrderPKCS7Request();

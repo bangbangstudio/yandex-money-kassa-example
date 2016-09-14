@@ -1,0 +1,7 @@
+{
+    "name": "tttptd/yandex-money-kassa-example",
+    "description": "Пример реализации протоколов Яндекс.Кассы",
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    }
+}

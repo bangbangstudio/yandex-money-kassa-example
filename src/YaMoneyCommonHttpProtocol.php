@@ -52,14 +52,14 @@ class YaMoneyCommonHttpProtocol {
 
     /**
      * CheckOrder request processing. We suppose there are no item with price less
-     * than 100 rubles in the shop.
+     * than 1(!) ruble in the shop. For testing, yopta :-).
      * @param  array $request payment parameters
      * @return string         prepared XML response
      */
     private function checkOrder($request) {
         $response = null;
-        if ($request['orderSumAmount'] < 100) {
-            $response = $this->buildResponse($this->action, $request['invoiceId'], 100, "The amount should be more than 100 rubles.");
+        if ($request['orderSumAmount'] < 1) {
+            $response = $this->buildResponse($this->action, $request['invoiceId'], 1, "The amount should be more than 1 rubles.");
         } else {
             $response = $this->buildResponse($this->action, $request['invoiceId'], 0);
         }
